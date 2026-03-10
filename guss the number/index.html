@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joyful Guess the Number</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="game-shell">
+    <section class="card main-card">
+      <div class="content">
+        <div class="badge"><span class="sparkles">✨</span> Joyful Guess the Number</div>
+        <h1>Can you find the hidden number?</h1>
+        <p class="subtitle">
+          Guess the mystery number in as few tries as possible. The faster you guess it, the higher your score!
+        </p>
+
+        <div class="number-range">Guess a number from 1 to 100</div>
+
+        <div class="input-row">
+          <input id="guessInput" class="guess-input" type="number" min="1" max="100" placeholder="Type your lucky guess..." />
+          <button id="guessBtn" class="primary-btn">Make Guess</button>
+          <button id="resetBtn" class="secondary-btn">New Round</button>
+        </div>
+
+        <div id="statusBox" class="status-box">Let's play! Enter a number and take your first guess. 🎯</div>
+
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-label">Current Score</div>
+            <div id="scoreValue" class="stat-value">100</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Tries This Round</div>
+            <div id="triesValue" class="stat-value">0</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Best Score</div>
+            <div id="bestValue" class="stat-value">0</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="card side-card">
+      <h2>Score History</h2>
+      <div id="historyList" class="history-list">
+        <div class="empty-state">
+          No rounds finished yet. Win a round and your score history will appear here. 🌈
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
