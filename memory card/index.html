@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Memory card game with difficulty levels and score history" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chicle&family=Delius&family=Fontdiner+Swanky&family=Permanent+Marker&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/25732d4a9b.js" crossorigin="anonymous"></script>
+    <title>Memory Card Game</title>
+</head>
+<body>
+    <header>
+        <section class="info">
+            <p>
+                <i class="fa-solid fa-star fa-spin"></i>
+                Score: <span class="score">0</span>
+            </p>
+            <p>
+                <i class="fa-regular fa-clock fa-shake"></i>
+                Time: <span class="timer">00:00</span>
+            </p>
+        </section>
+
+        <h1>Memory Card</h1>
+
+        <section class="controls">
+            <label for="difficulty" class="sr-only">Choose difficulty</label>
+            <select name="difficulty" id="difficulty">
+                <option value="easy" selected>Easy</option>
+                <option value="medium" >Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <button class="start" type="button">Start Game</button>
+        </section>
+    </header>
+
+    <main>
+    <div class="cards"></div>
+
+    <aside class="scoreHistory">
+        <h2>Score History</h2>
+        <ul class="historyList">
+            <li>No rounds played yet.</li>
+        </ul>
+    </aside>
+</main>
+
+    <script src="script.js"></script>
+</body>
+</html>
